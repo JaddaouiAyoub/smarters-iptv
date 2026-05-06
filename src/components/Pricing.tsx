@@ -70,17 +70,17 @@ const Pricing = () => {
             Choose Your <span className="text-primary">Perfect Plan</span>
           </h2>
 
-          <div className="inline-flex items-center gap-2 p-1.5 rounded-xl glass bg-white/5 mb-8">
+          <div className="grid grid-cols-2 md:inline-flex items-center gap-2 p-1.5 rounded-xl glass bg-white/5 mb-8 w-full max-w-[340px] md:max-w-none mx-auto md:w-auto">
             {connections.map((c, i) => (
               <button
                 key={c}
                 onClick={() => setConnIdx(i)}
-                className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${connIdx === i
+                className={`px-3 md:px-5 py-2.5 rounded-lg text-[13px] md:text-sm font-medium transition-all ${connIdx === i
                     ? "bg-primary text-primary-foreground shadow-lg"
                     : "text-muted-foreground hover:text-white"
                   }`}
               >
-                {c} {c === 1 ? "Connection" : "Connections"}
+                {c} {c === 1 ? "Conn" : "Conns"} <span className="hidden min-[400px]:inline">ection{c === 1 ? "" : "s"}</span>
               </button>
             ))}
           </div>
