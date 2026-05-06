@@ -17,7 +17,7 @@ const faqs = [
 const FAQItem = ({ q, a }: { q: string; a: string }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="glass rounded-xl overflow-hidden">
+    <div className="glass rounded-xl overflow-hidden ">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left"
