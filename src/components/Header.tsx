@@ -77,7 +77,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-foreground hover:text-primary transition-colors py-2"
+                className="text-foreground hover:text-primary transition-colors py-2 text-center"
               >
                 {link.label}
               </a>

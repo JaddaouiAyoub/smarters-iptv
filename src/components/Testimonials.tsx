@@ -46,15 +46,15 @@ const Testimonials = () => (
           <AnimatedSection key={t.name} delay={i * 0.1}>
             <motion.div
               whileHover={{ y: -4 }}
-              className="glass rounded-xl p-6 h-full"
+              className="glass rounded-xl p-6 h-full flex flex-col items-center text-center md:items-start md:text-left"
             >
-              <div className="flex gap-1 mb-4">
+              <div className="flex justify-center md:justify-start gap-1 mb-4">
                 {Array.from({ length: t.stars }).map((_, j) => (
                   <Star key={j} className="w-4 h-4 fill-primary text-primary" />
                 ))}
               </div>
               <p className="text-sm text-muted-foreground mb-6 leading-relaxed">"{t.review}"</p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center md:justify-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
                   {t.initials}
                 </div>

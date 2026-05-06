@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import heroDevices from "@/assets/hero-devices.jpg";
 
 const counters = [
-  { label: "Live Channels", target: 18000, suffix: "+" },
-  { label: "Movies & Shows", target: 85000, suffix: "+" },
-  { label: "Series", target: 12000, suffix: "+" },
-  { label: "Active Users", target: 50000, suffix: "+" },
+  { label: "Live Channels", target: 28000, suffix: "+" },
+  { label: "Movies ", target: 90000, suffix: "+" },
+  { label: "Series & Shows", target: 20000, suffix: "+" },
+  { label: "Active Users", target: 6500, suffix: "+" },
 ];
 
 const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
@@ -49,6 +49,7 @@ const Hero = () => (
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col items-center text-center lg:items-start lg:text-left"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-primary text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" />
@@ -56,16 +57,15 @@ const Hero = () => (
           </div>
 
           <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-            Unlimited Entertainment,{" "}
+            smarters iptv canada, THE FUTURE OF LIVE TV,{" "}
             <span className="text-gradient">One Subscription</span>
           </h1>
 
-          <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-            Access 18,000+ live channels, 85,000+ movies & series in stunning 4K quality. 
-            No buffering, no contracts, instant activation.
+          <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
+            With IPTV Canada, experience our iptv smarters pro subscription and don’t miss any of the amazing moments. more than +140,000 channels, movies, series, for all age groups.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-12">
             <a
               href="#pricing"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity glow-cyan"
@@ -80,9 +80,9 @@ const Hero = () => (
             </a>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-sm mx-auto lg:max-w-none lg:mx-0">
             {counters.map((c) => (
-              <div key={c.label}>
+              <div key={c.label} className="text-center lg:text-left">
                 <Counter target={c.target} suffix={c.suffix} />
                 <p className="text-xs text-muted-foreground mt-1">{c.label}</p>
               </div>

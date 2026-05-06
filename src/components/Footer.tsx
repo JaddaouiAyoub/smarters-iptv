@@ -3,9 +3,9 @@ import { Zap, Mail, MessageCircle } from "lucide-react";
 const Footer = () => (
   <footer id="contact" className="border-t border-border/50 py-16">
     <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-4 gap-10 mb-12">
-        <div>
-          <a href="#home" className="flex items-center gap-2 mb-4">
+      <div className="grid md:grid-cols-4 gap-10 mb-12 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start">
+          <a href="#home" className="flex items-center justify-center md:justify-start gap-2 mb-4">
             <Zap className="w-6 h-6 text-primary" />
             <span className="font-display font-bold text-lg text-foreground">
               smarters-iptv<span className="text-primary">.ca</span>
@@ -36,13 +36,13 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <h4 className="font-semibold text-foreground mb-4">Contact</h4>
-          <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2">
+          <ul className="space-y-3 text-sm text-muted-foreground flex flex-col items-center md:items-start">
+            <li className="flex items-center justify-center md:justify-start gap-2">
               <Mail className="w-4 h-4 text-primary" /> support@smarters-iptv.ca
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center justify-center md:justify-start gap-2">
               <MessageCircle className="w-4 h-4 text-primary" /> Live Chat 24/7
             </li>
           </ul>

@@ -45,11 +45,11 @@ const Features = () => (
               transition={{ type: "spring", stiffness: 300 }}
               className="glass rounded-xl p-6 h-full group hover:border-primary/40 transition-colors"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:glow-cyan transition-shadow">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 grid place-items-center mx-auto mb-4 group-hover:glow-cyan transition-shadow">
                 <f.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-display font-semibold text-lg mb-2 text-foreground">{f.title}</h3>
-              <p className="text-sm text-muted-foreground">{f.description}</p>
+              <h3 className="font-display font-semibold text-lg mb-2 text-foreground text-center">{f.title}</h3>
+              <p className="text-sm text-muted-foreground text-center">{f.description}</p>
             </motion.div>
           </AnimatedSection>
         ))}
