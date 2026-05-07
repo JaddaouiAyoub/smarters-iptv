@@ -9,6 +9,7 @@ import TermsAndConditions from "./pages/TermsAndConditions.tsx";
 import RefundPolicy from "./pages/RefundPolicy.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

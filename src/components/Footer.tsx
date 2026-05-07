@@ -60,7 +60,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-border/50 pt-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} SMARTERSIPTV.CA — All rights reserved.
+        © {new Date().getFullYear()} SMARTERS-IPTV.CA — All rights reserved.
       </div>
     </div>
   </footer>
